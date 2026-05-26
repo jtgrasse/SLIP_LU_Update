@@ -12,6 +12,11 @@ default: all
 
 include ../../SuiteSparse_config/SuiteSparse_config.mk
 
+UNAME_S := $(shell uname -s)
+ifneq (,(findstring CYGWIN,$(UNAME_S)))
+	export PATH := ../../lib:$(PATH)
+endif
+
 # uncomment for extra error checking:
 CFLAGS += -Wall -Wextra -Wpedantic -Werror
 

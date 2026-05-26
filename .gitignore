@@ -217,9 +217,7 @@ ktruss/ktruss_main
 ssget/files/ss_index_old.mat
 ssget/files/ssstats_old.csv
 
-# Do not ignore this file
-!.gitignore
-
+# Ignore executables made
 AMD/Demo/amd_demo.exe
 AMD/Demo/amd_demo2.exe
 AMD/Demo/amd_l_demo.exe
@@ -227,3 +225,10 @@ AMD/Demo/amd_simple.exe
 COLAMD/Demo/colamd_example.exe
 COLAMD/Demo/colamd_l_example.exe
 SuiteSparse_config/libsuitesparseconfig.lib
+SLIP_LU/Demo/example.exe
+SLIP_LU/Demo/SLIPLU.exe
+SLIP_LU/Demo/example2.exe
+
+# Do not ignore this file
+!.gitignore
+
